@@ -1,8 +1,13 @@
 import React from 'react'
+import Chart from '../components/Chart'
+import CoinDetail from '../components/CoinDetail'
 
 const Details = () => {
   return (
-    <div>Details</div>
+    <div>
+        <Chart/>
+        <CoinDetail/>
+    </div>
   )
 }
 
