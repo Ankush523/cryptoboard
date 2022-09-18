@@ -27,7 +27,7 @@ ChartJS.register(
 );
 
 
-const CoinCharts = () => {
+const Chart = () => {
   const { id } = useParams();
   const { response } = useAxios(`coins/${id}/market_chart?vs_currency=usd&days=7`);
   
@@ -63,4 +63,4 @@ const CoinCharts = () => {
   )
 }
 
-export default CoinCharts
+export default Chart

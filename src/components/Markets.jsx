@@ -1,6 +1,7 @@
 import React from 'react'
 import useAxios from '../hooks/useAxios'
 import Coin from './Coin'
+import Skeleton from './Skeleton'
 
 const Markets = () => {
 
