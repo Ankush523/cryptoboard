@@ -4,7 +4,19 @@ import TrendingCoin from './TrendingCoin'
 
 const Trending  = () => {
 
-    const  {response} = useAxios('search/trending')
+    const  {response, loading} = useAxios('search/trending')
+
+    if(true)
+    {
+        return (
+            <div className='wrapper-constainer mt-8'>
+                <Skeleton className="h-8 w-32"/>
+                <Skeleton className="h-8 w-full mt-2 "/>
+                <Skeleton className="h-8 w-full mt-2 "/>
+                <Skeleton className="h-8 w-full mt-2 "/>
+            </div>
+        )
+    }
   return (
     <div className=' mt-8'>
             <h1 className='text-2xl mb-2'>Trending</h1> 

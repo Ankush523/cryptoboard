@@ -9,8 +9,9 @@ const CoinDetail = () => {
     if(!response)
     {
         return(
-            <div>
-                Loading...
+            <div className='wrapper-constainer mt-8'>
+                <Skeleton className="h-8 w-32 mb-4"/>
+                <Skeleton className="h-72 w-full mb-10 "/>
             </div>
         )
     }
